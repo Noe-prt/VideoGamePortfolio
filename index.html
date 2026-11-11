@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr" data-lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noé Pareti | Game Developer — Unreal Engine / C++</title>
+  <meta name="description" content="Noé Pareti, game developer Unreal Engine / C++. Seul développeur d'ElectroFix Simulator (Steam) et créateur du plugin UMPS (Fab). Recherche un stage de 6 mois dès décembre 2026." />
+  <meta property="og:title" content="Noé Pareti | Game Developer — Unreal Engine / C++" />
+  <meta property="og:description" content="Jeu sorti sur Steam en solo, plugin multijoueur publié sur Fab. Disponible en stage de 6 mois dès décembre 2026." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/Electrofix.jpg" />
+  <meta name="theme-color" content="#0b0d12" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' shape-rendering='crispEdges'><rect width='16' height='16' fill='%230b0d12'/><path fill='%23ff5a47' d='M3 3h2v10H3zM5 5h2v2H5zM7 7h2v2H7zM9 9h2v2H9zM11 3h2v10h-2z'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#games" data-i18n="nav.games">Jeux</a>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Noé Pareti — accueil"><span class="brand-bracket">[</span>NOÉ<span class="brand-accent">.</span>DEV<span class="brand-bracket">]</span></a>
+      <nav class="nav-links" aria-label="Navigation">
+        <a href="#games" data-i18n="nav.games">Jeux</a>
+        <a href="#experience" data-i18n="nav.experience">Parcours</a>
+        <a href="#skills" data-i18n="nav.skills">Compétences</a>
+        <a href="#about" data-i18n="nav.about">À propos</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" class="lang-btn active" data-lang="fr" aria-pressed="true">FR</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="status"><span class="status-dot" aria-hidden="true"></span><span data-i18n="hero.status">Disponible en stage de 6 mois · dès décembre 2026</span></p>
+        <p class="hero-kicker" data-i18n="hero.kicker">Game Developer · Unreal Engine / C++</p>
+        <h1 class="hero-name">Noé Pareti</h1>
+        <p class="hero-sub" data-i18n="hero.sub"></p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#games" data-i18n="hero.cta">Voir mes jeux</a>
+          <a class="btn btn-ghost" id="cv-link" href="assets/cv/Noe-Pareti-CV-GameDev-FR.pdf" target="_blank" rel="noopener" data-i18n="hero.cv">Télécharger mon CV</a>
+        </div>
+        <ul class="hud" aria-label="Chiffres clés">
+          <li><span class="hud-num">01</span><span class="hud-label" data-i18n="hud.steam">Jeu sorti sur Steam</span></li>
+          <li><span class="hud-num">01</span><span class="hud-label" data-i18n="hud.fab">Plugin publié sur Fab</span></li>
+          <li><span class="hud-num">03</span><span class="hud-label" data-i18n="hud.months">Mois de dev en solo</span></li>
+          <li><span class="hud-num">C++</span><span class="hud-label" data-i18n="hud.stack">Unreal Engine 5</span></li>
+        </ul>
+      </div>
+      <a class="scroll-hint" href="#games" aria-label="Défiler"><span></span></a>
+    </section>
+
+    <!-- FEATURED GAMES -->
+    <section id="games" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-index">01</p>
+          <h2 class="section-title" data-i18n="games.title">Jeux & plugins</h2>
+          <p class="section-sub" data-i18n="games.sub"></p>
+        </header>
+        <div id="featured" class="featured"></div>
+      </div>
+    </section>
+
+    <!-- OTHER PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-index">02</p>
+          <h2 class="section-title" data-i18n="projects.title">Autres projets</h2>
+          <p class="section-sub" data-i18n="projects.sub"></p>
+        </header>
+        <div id="projects-grid" class="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-index">03</p>
+          <h2 class="section-title" data-i18n="experience.title">Parcours</h2>
+        </header>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-index">04</p>
+          <h2 class="section-title" data-i18n="skills.title">Compétences</h2>
+        </header>
+        <div class="skills-grid" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container about">
+        <div class="about-photo">
+          <img src="assets/img/profile.jpg" alt="Noé Pareti" loading="lazy" />
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        </div>
+        <div>
+          <header class="section-head">
+            <p class="section-index">05</p>
+            <h2 class="section-title" data-i18n="about.title">À propos</h2>
+          </header>
+          <p class="about-text" data-i18n="about.body"></p>
+          <ul class="about-facts" id="about-facts"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <p class="contact-kicker" data-i18n="contact.kicker">Player 2 ?</p>
+        <h2 class="contact-title" data-i18n="contact.title">Travaillons ensemble</h2>
+        <p class="contact-sub" data-i18n="contact.sub"></p>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="mailto:noepareti@gmail.com">noepareti@gmail.com</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/noe-pareti" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/Noe-prt" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn btn-ghost" id="cv-link-2" href="assets/cv/Noe-Pareti-CV-GameDev-FR.pdf" target="_blank" rel="noopener" data-i18n="contact.cv">CV (PDF)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><span data-i18n="footer.text">© 2026 Noé Pareti — HTML, CSS & JS.</span> <a href="https://portfolio-gamma-smoky-761o9gtj9i.vercel.app/" target="_blank" rel="noopener" data-i18n="footer.web">Aussi développeur web →</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
