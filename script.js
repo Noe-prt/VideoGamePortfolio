@@ -24,7 +24,7 @@ const I18N = {
     "hero.cv": "Télécharger mon CV",
     "hud.steam": "Jeu sorti sur Steam",
     "hud.fab": "Plugin publié sur Fab",
-    "hud.months": "Mois de dev en solo",
+    "hud.years": "Ans d'expérience sur Unreal Engine",
     "hud.stack": "Unreal Engine 5",
     "games.title": "Jeux & plugins",
     "games.sub": "Des projets livrés à de vrais joueurs et utilisateurs, de la conception à la publication.",
@@ -59,7 +59,7 @@ const I18N = {
     "hero.cv": "Download my resume",
     "hud.steam": "Game released on Steam",
     "hud.fab": "Plugin published on Fab",
-    "hud.months": "Months of solo dev",
+    "hud.years": "Years of Unreal Engine experience",
     "hud.stack": "Unreal Engine 5",
     "games.title": "Games & plugins",
     "games.sub": "Projects shipped to real players and users, from design to release.",
@@ -130,8 +130,8 @@ const DATA = {
         stack: ["C", "MiniLibX", "2D"], links: [{ label: "link.github", url: URLS.gh + "so_long" }] }
     ],
     timeline: [
-      { period: "Déc. 2026 → (en recherche)", role: "Stage Gameplay / Game Programmer", org: "Votre studio ?", open: true,
-        desc: "Stage de 6 mois à partir de décembre 2026. Envie de rejoindre une équipe et de contribuer à un jeu en production." },
+      { period: "Déc. 2026 → ?", role: "Stage Gameplay / Game Programmer", org: "Votre studio ?", open: true,
+        desc: "À la recherche d'un stage de 6 mois à partir de décembre 2026. Envie de rejoindre une équipe et de contribuer à un jeu en production." },
       { period: "Févr. 2026 → Juil. 2026", role: "Développeur de jeux vidéo · Stage 6 mois", org: "Adzap · startup de jeux vidéo · Paris",
         desc: "Seul développeur d'ElectroFix Simulator, de la conception à la sortie sur Steam en 3 mois : gameplay, réplication multijoueur, UI et publication." },
       { period: "Nov. 2024 → aujourd'hui", role: "En cours : Expert en architecture informatique · RNCP niveau 7", org: "42 Paris",
@@ -198,8 +198,8 @@ const DATA = {
         stack: ["C", "MiniLibX", "2D"], links: [{ label: "link.github", url: URLS.gh + "so_long" }] }
     ],
     timeline: [
-      { period: "Dec 2026 → (searching)", role: "Gameplay / Game Programmer Intern", org: "Your studio?", open: true,
-        desc: "6-month internship starting December 2026. Eager to join a team and contribute to a game in production." },
+      { period: "Dec 2026 → ?", role: "Gameplay / Game Programmer Intern", org: "Your studio?", open: true,
+        desc: "Looking for a 6-month internship starting December 2026. Eager to join a team and contribute to a game in production." },
       { period: "Feb 2026 → Jul 2026", role: "Game Developer · 6-month Internship", org: "Adzap · video game startup · Paris",
         desc: "Sole developer of ElectroFix Simulator, from design to Steam release in 3 months: gameplay, multiplayer replication, UI and publishing." },
       { period: "Nov 2024 → present", role: "Pursuing IT Architecture Expert · RNCP level 7", org: "42 Paris",
